@@ -1,9 +1,7 @@
 import os
 from Constants import *
 
-#there is a bug in the firmware version 0.75
-#this varible enables a work around for that bug
-waBug075 = True;
+waBug075 = False; 
 #Turn on debug messages
 DEBUG    = False;#True;
 
@@ -40,7 +38,7 @@ class GalileoPins:
 
     #Digital Pins and Muxes
     _VALIDPINS  = [  0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12,  13];
-    _PIN2GPIO   = ["50","51","32","18","28","17","24","27","26","19","16","25","38","39"];
+    _PIN2GPIO   = ["50","51","32","18","28","17","24","27","26","19","16","25","38","3"];
     _MUXGPIO    = ["40","41","31","30","00","00","00","00","00","00","42","43","54","55"];
     _MUXDRIVE   = [ "1", "1", "1", "1","00","00","00","00","00","00", "1", "1", "1", "1"];
     _MUX2GPIO   = ["00","00", "1", "0","00","00","00","00","00","00","00","00","00","00"];
